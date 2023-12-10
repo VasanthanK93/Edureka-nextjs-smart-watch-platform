@@ -44,8 +44,11 @@ export default function LoginPage() {
         setLoginFormData({ ...loginFormData, [e.target.name]: e.target.value })
     }
 
-    return <div className="container mx-auto p-4">
-        <h1 className="text-xl mb-4">User Login</h1>
+    return <div className="flex min-h-full flex-1 flex-col justify-center px-6 py-12 lg:px-8">
+        <div className="sm:mx-auto sm:w-full sm:max-w-sm">
+        <h1 className="mt-10 text-center text-2xl font-bold leading-9 tracking-tight text-white">User Login</h1>
+        </div>
+        <div className="mt-10 sm:mx-auto sm:w-full sm:max-w-sm">
         <form className="space-y-6" onSubmit={handleSubmit}>
             <div>
                 <label htmlFor="email" className="block text-sm font-medium leading-6 text-white">Email Address</label>
@@ -80,5 +83,6 @@ export default function LoginPage() {
               Register Here
             </a>
           </p>
+          </div>
     </div>
 }

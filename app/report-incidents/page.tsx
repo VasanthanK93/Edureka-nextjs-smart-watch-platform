@@ -52,22 +52,32 @@ export default function ReportIncidentsPage() {
 
     }
 
-    return <div className="container mx-auto p-4">
-        <h1 className="text-xl mb-4">Report a Incident</h1>
-        <form onSubmit={handleSubmit}>
+    return<div className="flex min-h-full flex-1 flex-col justify-center px-6 py-12 lg:px-8">
+    <div className="sm:mx-auto sm:w-full sm:max-w-sm">
+    <h1 className="mt-10 text-center text-2xl font-bold leading-9 tracking-tight text-white">Report a Incident</h1>
+    </div>
+    <div className="mt-10 sm:mx-auto sm:w-full sm:max-w-sm">
+        <form className="space-y-6" onSubmit={handleSubmit}>
             <div>
-                <label className="block">Title</label>
-                <input className="w-full p-2 border rounded" type="text" id="title" name="title" value={incident.title} onChange={handleChange} />
+                <label htmlFor="title" className="block text-sm font-medium leading-6 text-white">Title</label>
+                <div className="mt-2">
+                <input className="block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6" type="text" id="title" name="title" value={incident.title} onChange={handleChange} />
+                </div>
             </div>
             <div>
-                <label className="block">Description</label>
-                <textarea className="w-full p-2 border rounded" id="description" name="description" value={incident.description} onChange={handleChange}></textarea>
+                <label htmlFor="description" className="block text-sm font-medium leading-6 text-white">Description</label>
+                <div className="mt-2">
+                <textarea className="block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6" id="description" name="description" value={incident.description} onChange={handleChange}></textarea>
+                </div>
             </div>
             <div>
-                <label className="block">Image</label>
-                <input className="w-full p-2 border rounded" type="file" id="image" name="image" onChange={handleChange} />
+                <label  className="block text-sm font-medium leading-6 text-white">Image</label>
+                <div className="mt-2">
+                <input className="block w-full text-sm text-gray-900 border border-gray-300 rounded-lg cursor-pointer bg-gray-50 dark:text-gray-400 focus:outline-none dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400" type="file" id="image" name="file" onChange={handleChange} />
+                </div>
             </div>
-            <button disabled={isProcessing} type="submit" className={`text-white px-4 py-2 rounded ${isProcessing ? 'bg-gray-800' : 'bg-blue-500 hover:bg-blue-600'}`}>Submit Incident</button>
+            <button disabled={isProcessing} type="submit" className={`flex w-full justify-center rounded-md px-3 py-1.5 text-sm font-semibold leading-6 text-white shadow-sm focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600 ${isProcessing ? 'bg-gray-800' : 'bg-indigo-600 hover:bg-indigo-500'}`}>Submit Incident</button>
         </form>
+    </div>
     </div>
 }

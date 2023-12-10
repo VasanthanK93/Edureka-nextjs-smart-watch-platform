@@ -18,76 +18,74 @@
   ],
   "incidents": [
     {
-      "title": "Water leakage on main road",
-      "description": "Water leakage on main road near house 15",
-      "id": 1
+      "id": "1",
+      "title": "Suspicious Activity",
+      "description": "Report of individuals loitering around the neighborhood park after midnight. Please investigate."
     },
     {
-      "title": "Water leakage near House 20",
-      "description": "Water leakage near House 20",
-      "id": 2
+      "id": "2",
+      "title": "Street Light Outage",
+      "description": "Street light on Elm Street not working. It's causing a dark area, and residents feel unsafe. Needs urgent attention."
     },
     {
-      "title": "Incident 3",
-      "description": "Incident 3",
-      "id": 3
+      "id": "3",
+      "title": "Lost Pet",
+      "description": "A resident has lost their cat named Whiskers. If found, please contact the owner at xxx-xxx-xxxx."
     },
     {
-      "title": "Incident 4",
-      "description": "Incident 4",
-      "id": 4
+      "id": "4",
+      "title": "Loud Noise Complaint",
+      "description": "Complaint about loud music and party noise from a house on Maple Avenue. Disturbing the neighborhood peace."
     },
     {
-      "title": "Incident 44",
-      "description": "Incident 43",
-      "id": 5
+      "id": "5",
+      "title": "Vandalism Report",
+      "description": "Vandalism incident at the local community center. Graffiti found on the exterior walls. Authorities notified."
     },
     {
-      "title": "New incident on main road",
-      "description": "New incident on main road",
-      "id": 6
-    },
-    {
-      "title": "New incident in park",
-      "description": "New incident in park",
-      "id": 7
+      "title": "Suspicious Vehicle",
+      "description": "A suspicious vehicle has been parked near the community center for an extended period. Requesting investigation.",
+      "image": "",
+      "id": "3VZxFuC"
     }
   ],
   "servicerequest": [
     {
-      "title": "Water leakage on main road",
-      "description": "Water leakage on main road near house 15",
-      "id": 1
+      "id": "1",
+      "title": "Street Cleaning Request",
+      "description": "Requesting street cleaning on Oak Street. There is a lot of litter and debris that needs to be cleared."
     },
     {
-      "title": "Water leakage near House 20",
-      "description": "Water leakage near House 20",
-      "id": 2
+      "id": "2",
+      "title": "Pothole Repair",
+      "description": "Report of a large pothole on Main Street. It's causing inconvenience to drivers. Please repair as soon as possible."
     },
     {
-      "title": "Incident 3",
-      "description": "Incident 3",
-      "id": 3
+      "id": "3",
+      "title": "Tree Trimming",
+      "description": "Tree branches near power lines on Pine Street need trimming to prevent potential hazards. Requesting tree maintenance."
     },
     {
-      "title": "Incident 4",
-      "description": "Incident 4",
-      "id": 4
+      "id": "4",
+      "title": "Sidewalk Repair",
+      "description": "The sidewalk on Elm Avenue is damaged, posing a tripping hazard. Requesting repairs for safety reasons."
     },
     {
-      "title": "Incident 44",
-      "description": "Incident 43",
-      "id": 5
+      "id": "5",
+      "title": "Garbage Pickup Request",
+      "description": "Garbage pickup was missed on Birch Lane. Bins are full, and residents need prompt collection to maintain cleanliness."
     },
     {
-      "title": "New incident on main road",
-      "description": "New incident on main road",
-      "id": 6
+      "title": "Traffic Signal Malfunction",
+      "description": "The traffic signal at the intersection of Maple and Oak Streets is malfunctioning. Vehicles are experiencing delays.",
+      "image": "",
+      "id": "-NH1iCP"
     },
     {
-      "title": "New incident in park",
-      "description": "New incident in park",
-      "id": 7
+      "title": "Dog Park Maintenance",
+      "description": "Maintenance required at the local dog park. Repairing damaged fences and ensuring a safe environment for pets and owners.",
+      "image": "",
+      "id": "2r1rm_h"
     }
   ]
 }

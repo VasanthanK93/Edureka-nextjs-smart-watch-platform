@@ -9,6 +9,11 @@
       "email": "abc1@def.com",
       "password": "$2a$10$6jP2OMwFikRUzgg9fwFokugzBFuqYIhikPVE7eTFCudddeJsBqYV2",
       "id": 2
+    },
+    {
+      "email": "test@test.com",
+      "password": "$2a$10$.eFPIlqlXf6ix4MEgsVVu.U5r1cCoACTfQ.KQkh5eO1cW5Cw5t4R.",
+      "id": 3
     }
   ],
   "incidents": [

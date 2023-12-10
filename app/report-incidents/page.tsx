@@ -1,23 +1,9 @@
 'use client'
-import { useEffect, useState } from "react"
+import { useRouter } from "next/navigation";
+import { useState } from "react"
 
 export default function ReportIncidentsPage() {
-
-    const [totalIncidents, setTotalIncidents] = useState([]);
-
-    useEffect(() => {
-        async function getIncidents() {
-            const response = await fetch("http://localhost:4800/incidents", {
-                headers: {
-                    'Authorization': `bearer ${window.localStorage.getItem("access-token") || ''}`
-                }
-            });
-            const data = await response.json();
-            setTotalIncidents(data);
-        }
-        getIncidents();
-    }, [])
-
+    const { push } = useRouter();
     const [incident, setIncident] = useState({
         title: "",
         description: "",
@@ -57,6 +43,7 @@ export default function ReportIncidentsPage() {
             const data = await response.json();
             setIsProcessing(false);
             cleanUpForm();
+            push('/')
         }
         catch (error) {
             console.log(error);
@@ -67,18 +54,6 @@ export default function ReportIncidentsPage() {
 
     return <div className="container mx-auto p-4">
         <h1 className="text-xl mb-4">Report a Incident</h1>
-
-        <table>
-            {
-                totalIncidents.map((incident: any) => {
-                    return <tr>
-                        <td>{incident.title}</td>
-                        <td>{incident.description}</td>
-                    </tr>
-                })
-            }
-        </table>
-
         <form onSubmit={handleSubmit}>
             <div>
                 <label className="block">Title</label>

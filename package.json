@@ -6,9 +6,12 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "dev:api": "json-server ./mock-data/db.json --port 4800 --delay 3000 -m ./node_modules/json-server-auth"
   },
   "dependencies": {
+    "json-server": "^0.17.4",
+    "json-server-auth": "^2.1.0",
     "react": "^18",
     "react-dom": "^18",
     "next": "14.0.3"
